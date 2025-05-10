@@ -105,4 +105,4 @@ modal.render({ title: 'Carregando...' }).then(async () => {
 ------------
 
 ## Licença 
-MIT © Rômulo Pereira
+MIT © Rômulo Costa
