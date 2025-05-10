@@ -23,7 +23,10 @@ ou
 <script src="render-modal.js"></script>
 ```
 
-
+Para utilizar com import no seu projeto use a versão umd (prefixo .umd.js)
+```html
+<script src="https://cdn.jsdelivr.net/gh/rocooliveira/render-modal@1.0.0/render-modal.umd.min.js"></script>
+```
 ------------
 
 
