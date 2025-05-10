@@ -3,7 +3,7 @@
  * @name renderModal
  * @description Classe para gerenciar modais Bootstrap.
  * @version 1.0.0
- * @author Rômulo Pereira <rocooliveira@outlook.com>
+ * @author Rômulo Costa <rocooliveira@outlook.com>
  * @license MIT
  * @repository https://github.com/rocooliveira/renderModal
  *
