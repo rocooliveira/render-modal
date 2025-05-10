@@ -23,9 +23,9 @@ ou
 <script src="render-modal.js"></script>
 ```
 
-Para utilizar com import no seu projeto use a versão umd (prefixo .umd.js)
+Para utilizar com import no seu projeto use a versão umd (prefixo .esm.js)
 ```html
-<script src="https://cdn.jsdelivr.net/gh/rocooliveira/render-modal@v1.0.0/render-modal.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/rocooliveira/render-modal@v1.0.0/render-modal.esm.min.js"></script>
 ```
 ------------
 
