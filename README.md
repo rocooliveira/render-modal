@@ -2,11 +2,6 @@
 Classe JavaScript para gerenciar modais Bootstrap 5.  
 Permite criar, personalizar e controlar modais com facilidade.
 
-
-# Render Modal
-Classe JavaScript para gerenciar modais Bootstrap 5.  
-Permite criar, personalizar e controlar modais com facilidade.
-
 ## 📦 Instalação
 
 Você pode usar diretamente via CDN (com jsDelivr) ou baixar para seu projeto:
