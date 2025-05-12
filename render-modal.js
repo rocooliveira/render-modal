@@ -144,7 +144,7 @@ class renderModal {
 
    const dialog = this.#handles.dialog;
 
-   const awaitModal = (method) => { console.log('teste')
+   const awaitModal = (method) => {
       if (dialog.classList.contains('show')) {
         method();
       } else {
