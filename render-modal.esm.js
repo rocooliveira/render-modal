@@ -160,9 +160,10 @@ class renderModal {
   }
 
   onClose() {
+  	const dialog = this.#handles.dialog;
     return new Promise(function(resolve) {
-      this.#handles.dialog.addEventListener('hidden.bs.modal', function handler() {
-        this.#handles.dialog.removeEventListener('hidden.bs.modal', handler);
+      dialog.addEventListener('hidden.bs.modal', function handler() {
+        dialog.removeEventListener('hidden.bs.modal', handler);
         resolve(true);
       });
     });
