@@ -160,7 +160,7 @@ class renderModal {
   }
 
   onClose() {
-    const dialog = this.#handles.dialog;
+  	const dialog = this.#handles.dialog;
     return new Promise(function(resolve) {
       dialog.addEventListener('hidden.bs.modal', function handler() {
         dialog.removeEventListener('hidden.bs.modal', handler);
@@ -399,20 +399,9 @@ class renderModal {
 
     // Gerencia limpeza da modal ao fechar
     this.#handles.dialog.addEventListener('hide.bs.modal', function(e) {
-      // Move o foco para fora da modal antes de ocultá-la
-      document.body.focus();
-      
-      // Ou move o foco para o primeiro elemento focável fora da modal
-      setTimeout(() => {
-        const focusableElements = document.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
-        for (const element of focusableElements) {
-          // Verifica se o elemento é visível e não está dentro de uma modal
-          if (element.offsetParent !== null && !element.closest('.modal')) {
-            element.focus();
-            break;
-          }
-        }
-      }, 0);
+		  if (document.activeElement) {
+		    document.activeElement.blur();
+		  }
     });
     
     this.#handles.dialog.addEventListener('hidden.bs.modal', function(e) {
